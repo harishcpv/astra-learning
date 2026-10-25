@@ -1,0 +1,14 @@
+{
+  "name": "astra-adaptive-learning-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first adaptive learning and coaching workspace prototype.",
+  "scripts": {
+    "build:pdfs": "node tools/generate-pdfs.js",
+    "gui": "node tools/serve-gui.js",
+    "test": "node tools/smoke-gui.js"
+  },
+  "dependencies": {
+    "pdfkit": "^0.16.0"
+  }
+}

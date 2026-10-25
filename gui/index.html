@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fc" />
+    <meta name="description" content="Astra — an adaptive learning and coaching workspace." />
+    <title>Astra — adaptive learning workspace</title>
+    <link rel="stylesheet" href="/gui/styles.css" />
+  </head>
+  <body>
+    <div class="astra-shell">
+      <aside class="astra-sidebar" aria-label="Primary navigation">
+        <div class="astra-brand">
+          <div class="astra-brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div><strong>astra</strong><span>learning intelligence</span></div>
+        </div>
+        <div class="tenant-switcher">
+          <div class="tenant-kicker">Tenant workspace</div>
+          <div class="tenant-value"><span class="tenant-avatar">N</span><strong>Northstar Academy</strong><span class="tenant-chevron">⌄</span></div>
+        </div>
+        <div class="astra-sidebar-label">Workspace</div>
+        <nav class="astra-nav" id="primary-nav"></nav>
+        <div class="astra-sidebar-label student-label">Active learner</div>
+        <div class="student-mini-card">
+          <div class="student-avatar">AM</div>
+          <div><strong id="sidebar-student">Alex Morgan</strong><span id="sidebar-level">Beginner learner</span></div>
+          <span class="online-dot" title="Active"></span>
+        </div>
+        <div class="astra-sidebar-bottom">
+          <div class="privacy-note"><span>✦</span><div><strong>Human-in-the-loop</strong><small>Coach review stays in control.</small></div></div>
+          <button class="sidebar-profile" data-action="profile-menu"><span class="profile-avatar">H</span><span><strong>Harish</strong><small>Workspace admin</small></span><b>•••</b></button>
+        </div>
+      </aside>
+
+      <main class="astra-main">
+        <header class="astra-topbar">
+          <button class="mobile-menu" aria-label="Open navigation" data-action="mobile-menu">☰</button>
+          <div class="astra-breadcrumb"><span>Northstar Academy</span><b>/</b><strong id="breadcrumb-view">Overview</strong></div>
+          <div class="astra-top-actions">
+            <label class="astra-search" aria-label="Search workspace"><span>⌕</span><input id="global-search" type="search" placeholder="Search learners or topics" autocomplete="off" /><kbd>⌘ K</kbd></label>
+            <button class="top-icon" aria-label="Notifications" data-action="notifications"><span class="notification-dot"></span>♢</button>
+            <div class="profile-avatar top-avatar">H</div>
+          </div>
+        </header>
+        <div class="astra-content" id="app" aria-live="polite"></div>
+      </main>
+    </div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <div id="modal-root"></div>
+    <script src="/gui/learning-engine.js"></script>
+    <script src="/gui/app.js"></script>
+  </body>
+</html>
