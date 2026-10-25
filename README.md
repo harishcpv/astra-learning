@@ -10,6 +10,10 @@ Astra is a local-first, multi-tenant coaching and assessment prototype. A learne
 
 The current slice is intentionally offline and deterministic. It does not call an external model or send learner data to a remote service. The rule-based engine in `gui/learning-engine.js` provides a realistic local prototype that can later be replaced behind the same interface.
 
+## Architecture
+
+See [`docs/architecture.md`](docs/architecture.md) for the Mermaid architecture diagram and runtime boundaries.
+
 ## Requirements
 
 - Node.js `24.19.0` (the version is pinned in `.nvmrc`)
